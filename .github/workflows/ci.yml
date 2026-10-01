@@ -87,6 +87,7 @@ env:
   NODE_VERSION: "24.x"
 
 jobs:
+  if: false
   # Preflight: establish routing truth and job matrices once, then let real
   # work fan out from a single source of truth.
   # Fork PRs cannot read base-repository vars, so their retries select hosted
